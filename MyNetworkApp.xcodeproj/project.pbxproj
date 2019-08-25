@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1EB9DB231257B6001086BA /* pictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1EB9DA231257B6001086BA /* pictures.xcassets */; };
 		DA26634023100EBB0078C6D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26633F23100EBB0078C6D8 /* AppDelegate.swift */; };
-		DA26634223100EBB0078C6D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26634123100EBB0078C6D8 /* ViewController.swift */; };
-		DA26634523100EBB0078C6D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA26634323100EBB0078C6D8 /* Main.storyboard */; };
-		DA26634723100EBC0078C6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA26634623100EBC0078C6D8 /* Assets.xcassets */; };
 		DA26634A23100EBC0078C6D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA26634823100EBC0078C6D8 /* LaunchScreen.storyboard */; };
+		DA26635D231010E70078C6D8 /* CurrencyScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA26635C231010E70078C6D8 /* CurrencyScreen.storyboard */; };
+		DA26635F2310112A0078C6D8 /* CurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26635E2310112A0078C6D8 /* CurrencyVC.swift */; };
+		DA266361231011EB0078C6D8 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA266360231011EB0078C6D8 /* Currency.swift */; };
+		DAC007FB231181350040B037 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC007FA231181350040B037 /* TableViewController.swift */; };
+		DAC0080523119AF80040B037 /* PrivatCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0080423119AF80040B037 /* PrivatCurrencyVC.swift */; };
+		DAC0080723119DD40040B037 /* CurrencyPrivat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0080623119DD40040B037 /* CurrencyPrivat.swift */; };
+		DAFC21452312423F001604ED /* PrivatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFC21442312423F001604ED /* PrivatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA1EB9DA231257B6001086BA /* pictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pictures.xcassets; sourceTree = "<group>"; };
 		DA26633C23100EBB0078C6D8 /* MyNetworkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNetworkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA26633F23100EBB0078C6D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA26634123100EBB0078C6D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA26634423100EBB0078C6D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DA26634623100EBC0078C6D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA26634923100EBC0078C6D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA26634B23100EBC0078C6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA26635C231010E70078C6D8 /* CurrencyScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyScreen.storyboard; sourceTree = "<group>"; };
+		DA26635E2310112A0078C6D8 /* CurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyVC.swift; sourceTree = "<group>"; };
+		DA266360231011EB0078C6D8 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		DAC007FA231181350040B037 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DAC0080423119AF80040B037 /* PrivatCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatCurrencyVC.swift; sourceTree = "<group>"; };
+		DAC0080623119DD40040B037 /* CurrencyPrivat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPrivat.swift; sourceTree = "<group>"; };
+		DAFC21442312423F001604ED /* PrivatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,67 @@
 		DA26633E23100EBB0078C6D8 /* MyNetworkApp */ = {
 			isa = PBXGroup;
 			children = (
-				DA26633F23100EBB0078C6D8 /* AppDelegate.swift */,
-				DA26634123100EBB0078C6D8 /* ViewController.swift */,
-				DA26634323100EBB0078C6D8 /* Main.storyboard */,
-				DA26634623100EBC0078C6D8 /* Assets.xcassets */,
-				DA26634823100EBC0078C6D8 /* LaunchScreen.storyboard */,
-				DA26634B23100EBC0078C6D8 /* Info.plist */,
+				DA26635323100FC50078C6D8 /* Models */,
+				DA26635523100FD70078C6D8 /* View Contorlles */,
+				DA26635623100FE10078C6D8 /* Helpers */,
+				DA26635723100FEC0078C6D8 /* Storyboards */,
+				DA26635823100FF80078C6D8 /* Resources */,
+				DA266359231010000078C6D8 /* App */,
 			);
 			path = MyNetworkApp;
+			sourceTree = "<group>";
+		};
+		DA26635323100FC50078C6D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA266360231011EB0078C6D8 /* Currency.swift */,
+				DAC0080623119DD40040B037 /* CurrencyPrivat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA26635523100FD70078C6D8 /* View Contorlles */ = {
+			isa = PBXGroup;
+			children = (
+				DA26635E2310112A0078C6D8 /* CurrencyVC.swift */,
+				DAC0080423119AF80040B037 /* PrivatCurrencyVC.swift */,
+			);
+			path = "View Contorlles";
+			sourceTree = "<group>";
+		};
+		DA26635623100FE10078C6D8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DAFC21442312423F001604ED /* PrivatCell.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DA26635723100FEC0078C6D8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DA26635C231010E70078C6D8 /* CurrencyScreen.storyboard */,
+				DA26634823100EBC0078C6D8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DA26635823100FF80078C6D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA1EB9DA231257B6001086BA /* pictures.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA266359231010000078C6D8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA26633F23100EBB0078C6D8 /* AppDelegate.swift */,
+				DA26634B23100EBC0078C6D8 /* Info.plist */,
+				DAC007FA231181350040B037 /* TableViewController.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1EB9DB231257B6001086BA /* pictures.xcassets in Resources */,
 				DA26634A23100EBC0078C6D8 /* LaunchScreen.storyboard in Resources */,
-				DA26634723100EBC0078C6D8 /* Assets.xcassets in Resources */,
-				DA26634523100EBB0078C6D8 /* Main.storyboard in Resources */,
+				DA26635D231010E70078C6D8 /* CurrencyScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +198,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA26634223100EBB0078C6D8 /* ViewController.swift in Sources */,
+				DAC0080723119DD40040B037 /* CurrencyPrivat.swift in Sources */,
+				DA266361231011EB0078C6D8 /* Currency.swift in Sources */,
 				DA26634023100EBB0078C6D8 /* AppDelegate.swift in Sources */,
+				DA26635F2310112A0078C6D8 /* CurrencyVC.swift in Sources */,
+				DAFC21452312423F001604ED /* PrivatCell.swift in Sources */,
+				DAC0080523119AF80040B037 /* PrivatCurrencyVC.swift in Sources */,
+				DAC007FB231181350040B037 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA26634323100EBB0078C6D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA26634423100EBB0078C6D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA26634823100EBC0078C6D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGXYB2UJT9;
-				INFOPLIST_FILE = MyNetworkApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyNetworkApp/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGXYB2UJT9;
-				INFOPLIST_FILE = MyNetworkApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyNetworkApp/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
