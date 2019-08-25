@@ -13,6 +13,7 @@ class PrivatCell: UITableViewCell {
     @IBOutlet weak var buyLabel: UILabel!
     @IBOutlet weak var sellLabel: UILabel!
     
+    
     func configureCell (privatCurrency: Privat) {
         var correctBuy : Double
         var correctSell: Double
@@ -20,11 +21,8 @@ class PrivatCell: UITableViewCell {
         correctBuy = round(Double(privatCurrency.buy)! * 100.00) / 100.00
         correctSell = round(Double(privatCurrency.sale)! * 100.00) / 100.00
         
-        
         currencyLabel.text = privatCurrency.ccy
         buyLabel.text = String(correctBuy)
         sellLabel.text = String(correctSell)
-//        sellLabel.text = privatCurrency.sale
-        
     }
 }
