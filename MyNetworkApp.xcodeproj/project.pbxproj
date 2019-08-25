@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DA1EB9DB231257B6001086BA /* pictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1EB9DA231257B6001086BA /* pictures.xcassets */; };
 		DA1EB9E123127E35001086BA /* PrivatCurrenciesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1EB9E023127E35001086BA /* PrivatCurrenciesVC.swift */; };
+		DA1EB9E5231290F6001086BA /* ExtensionCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1EB9E4231290F6001086BA /* ExtensionCurrencyVC.swift */; };
+		DA1EB9E723129277001086BA /* ExtensionPrivatCurrenciesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1EB9E623129277001086BA /* ExtensionPrivatCurrenciesVC.swift */; };
 		DA26634023100EBB0078C6D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26633F23100EBB0078C6D8 /* AppDelegate.swift */; };
 		DA26634A23100EBC0078C6D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA26634823100EBC0078C6D8 /* LaunchScreen.storyboard */; };
 		DA26635D231010E70078C6D8 /* CurrencyScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA26635C231010E70078C6D8 /* CurrencyScreen.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		DA1EB9DA231257B6001086BA /* pictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pictures.xcassets; sourceTree = "<group>"; };
 		DA1EB9E023127E35001086BA /* PrivatCurrenciesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatCurrenciesVC.swift; sourceTree = "<group>"; };
+		DA1EB9E4231290F6001086BA /* ExtensionCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCurrencyVC.swift; sourceTree = "<group>"; };
+		DA1EB9E623129277001086BA /* ExtensionPrivatCurrenciesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPrivatCurrenciesVC.swift; sourceTree = "<group>"; };
 		DA26633C23100EBB0078C6D8 /* MyNetworkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNetworkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA26633F23100EBB0078C6D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA26634923100EBC0078C6D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,7 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				DA26635E2310112A0078C6D8 /* CurrencyVC.swift */,
+				DA1EB9E4231290F6001086BA /* ExtensionCurrencyVC.swift */,
 				DA1EB9E023127E35001086BA /* PrivatCurrenciesVC.swift */,
+				DA1EB9E623129277001086BA /* ExtensionPrivatCurrenciesVC.swift */,
 			);
 			path = "View Contorlles";
 			sourceTree = "<group>";
@@ -198,11 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1EB9E723129277001086BA /* ExtensionPrivatCurrenciesVC.swift in Sources */,
 				DAC0080723119DD40040B037 /* CurrencyPrivat.swift in Sources */,
 				DA266361231011EB0078C6D8 /* Currency.swift in Sources */,
 				DA26634023100EBB0078C6D8 /* AppDelegate.swift in Sources */,
 				DA26635F2310112A0078C6D8 /* CurrencyVC.swift in Sources */,
 				DAFC21452312423F001604ED /* PrivatCell.swift in Sources */,
+				DA1EB9E5231290F6001086BA /* ExtensionCurrencyVC.swift in Sources */,
 				DA1EB9E123127E35001086BA /* PrivatCurrenciesVC.swift in Sources */,
 				DAC007FB231181350040B037 /* TableViewController.swift in Sources */,
 			);
