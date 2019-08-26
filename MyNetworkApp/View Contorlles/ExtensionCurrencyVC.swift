@@ -30,6 +30,7 @@ extension CurrencyVC {
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             
+            
             guard let data = data else { return }
             
             do {

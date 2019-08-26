@@ -38,7 +38,6 @@ extension PrivatCurrenciesVC {
             do {
                 
                 self.privatCurrencies = try JSONDecoder().decode([Privat].self, from: data)
-                print(self.privatCurrencies)
                 
                 DispatchQueue.main.async {
                     self.tableViewOutlet.reloadData()
