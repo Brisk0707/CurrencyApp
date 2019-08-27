@@ -29,40 +29,23 @@ extension PrivatCurrenciesVC {
         return cell
     }
     
-    func getData() {
-        
-        guard let url = URL(string: jsonUrl) else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            
-            guard let data = data else { return }
-            do {
-                let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                self.privatCurrencies = try decoder.decode([Privat].self, from: data)
-                
-                DispatchQueue.main.async {
-                    self.tableViewOutlet.reloadData()
-                    
-                }
-                
-            } catch let error {
-                print(error)
-            }
-            
-            } .resume()
-        
-    }
-    
     func getDataAlamofire() {
         guard let url = URL(string: jsonUrl) else { return }
         
         request(url).validate().responseJSON { response in
-        
-            guard let value = response.result.value else {return}
             
-            print(value)
-    }
-    
+            switch response.result {
+            case .success(let value):
+                
+                self.privatCurrencies = Privat.getCurrencies(from: value)
+                
+                DispatchQueue.main.async {
+                    self.tableViewOutlet.reloadData()
+                }
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
 }
 }
