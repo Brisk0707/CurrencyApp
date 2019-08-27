@@ -21,5 +21,3 @@ class CurrencyVC: UITableViewController {
         getData()
     }
 }
-
-//Сделал правильные переменные в Currency.swift и CurrencyPrivat.swift
