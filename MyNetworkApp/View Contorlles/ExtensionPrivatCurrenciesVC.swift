@@ -47,5 +47,5 @@ extension PrivatCurrenciesVC {
                 print(error)
             }
         }
-}
+    }
 }
