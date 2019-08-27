@@ -8,7 +8,7 @@
 
 struct Privat: Decodable {
     let ccy: String
-    let base_ccy: String
+    let baseCcy: String
     let buy: String
     let sale: String
 }
