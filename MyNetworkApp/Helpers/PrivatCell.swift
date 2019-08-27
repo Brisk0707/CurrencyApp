@@ -18,8 +18,8 @@ class PrivatCell: UITableViewCell {
         var correctBuy : Double
         var correctSell: Double
         
-        correctBuy = round(Double(privatCurrency.buy)! * 100.00) / 100.00
-        correctSell = round(Double(privatCurrency.sale)! * 100.00) / 100.00
+        correctBuy = round(Double(privatCurrency.buy!)! * 100.00) / 100.00
+        correctSell = round(Double(privatCurrency.sale!)! * 100.00) / 100.00
         
         currencyLabel.text = privatCurrency.ccy
         buyLabel.text = String(correctBuy)

@@ -38,7 +38,7 @@ extension CurrencyVC {
                 
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
-                    self.dateLabel.text = "Курси валют станом на " + self.allCurrecies[0].exchangedate
+                    self.dateLabel.text = "Курси валют станом на " + self.allCurrecies[0].exchangeDate
                 }
                 
             } catch let error {

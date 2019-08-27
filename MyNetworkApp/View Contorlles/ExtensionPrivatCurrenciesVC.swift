@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 extension PrivatCurrenciesVC {
     
@@ -28,27 +29,23 @@ extension PrivatCurrenciesVC {
         return cell
     }
     
-    func getData() {
-        
+    func getDataAlamofire() {
         guard let url = URL(string: jsonUrl) else { return }
         
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
+        request(url).validate().responseJSON { response in
             
-            guard let data = data else { return }
-            do {
+            switch response.result {
+            case .success(let value):
                 
-                self.privatCurrencies = try JSONDecoder().decode([Privat].self, from: data)
+                self.privatCurrencies = Privat.getCurrencies(from: value)
                 
                 DispatchQueue.main.async {
                     self.tableViewOutlet.reloadData()
-                    
                 }
                 
-            } catch let error {
+            case .failure(let error):
                 print(error)
             }
-            
-            } .resume()
-        
+        }
     }
 }

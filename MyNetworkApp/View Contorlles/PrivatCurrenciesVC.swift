@@ -18,6 +18,6 @@ class PrivatCurrenciesVC: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
+        getDataAlamofire()
     }
 }

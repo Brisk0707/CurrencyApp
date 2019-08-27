@@ -6,10 +6,18 @@
 //  Copyright © 2019 Borys Krisko. All rights reserved.
 //
 
-struct Currency : Decodable {
-    let r030 : Int
-    let txt : String
-    let rate : Double
-    let cc : String
-    let exchangedate: String
+struct Currency: Decodable {
+    let currencyCode: Int
+    let txt: String
+    let rate: Double
+    let currencyChar: String
+    let exchangeDate: String
+    
+    enum CodingKeys: String, CodingKey {
+        case currencyCode = "r030"
+        case txt = "txt"
+        case rate = "rate"
+        case currencyChar = "cc"
+        case exchangeDate = "exchangedate"
+    }
 }
